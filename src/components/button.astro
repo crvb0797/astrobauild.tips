@@ -1,0 +1,12 @@
+---
+const { title, color } = Astro.props;
+---
+
+<button
+  id="alert"
+  onclick="alert('Me presionaste')"
+  class="inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
+  class:list={[color]}
+>
+  <slot />
+</button>
