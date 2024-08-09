@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Base.astro";
 import Button from "../components/button.astro";
+import ListRooms from "../components/ListRooms.astro";
 ---
 
 <Layout title="Pagina de prueba">
@@ -10,5 +11,9 @@ import Button from "../components/button.astro";
     <Button title="Descarga" color="bg-blue-900">Descarga</Button>
     <Button title="Guardar" color="bg-amber-400">Guardar</Button>
     <Button title="Fuego">Actualizar</Button>
+  </div>
+
+  <div class="mt-5">
+    <ListRooms />
   </div>
 </Layout>
